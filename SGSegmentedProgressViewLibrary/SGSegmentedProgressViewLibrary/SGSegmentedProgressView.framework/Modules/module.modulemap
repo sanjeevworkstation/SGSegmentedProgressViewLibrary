@@ -1,0 +1,11 @@
+framework module SGSegmentedProgressView {
+  umbrella header "SGSegmentedProgressView.h"
+
+  export *
+  module * { export * }
+}
+
+module SGSegmentedProgressView.Swift {
+    header "SGSegmentedProgressView-Swift.h"
+    requires objc
+}
