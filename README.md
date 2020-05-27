@@ -1,0 +1,2 @@
+# SGSegmentedProgressViewLibrary
+SGSegmentedProgressViewLibrary By UIProgressView
