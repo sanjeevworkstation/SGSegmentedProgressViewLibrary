@@ -2,94 +2,117 @@
 
 SGSegmentedProgressViewLibrary progress bar is develped by UIProgressView.
 
+<div><img src="https://github.com/sanjeevworkstation/SGImages/blob/master/segmentedprogressbardemo.gif" width="30%" height="30%"></div>
+
 # How to use:
 
-1. Declaration
+## Declaration
 
+```
 var segmentBar: SGSegmentedProgressView?
+```
 
+## Add Progress View
 
-2. Add Progress View
-
+```
 let rect = CGRect(x: 20, y: 100, width: self.view.frame.size.width-40, height: 2)
 
 self.segmentBar = SGSegmentedProgressView(frame: rect, delegate: self, dataSource: self)
 
 self.view.addSubview(self.segmentBar!)
+```
 
+## Delegates & DataSources
 
-3. Delegates & DataSources
-
+```
 extension ViewController: SGSegmentedProgressViewDelegate, SGSegmentedProgressViewDataSource {
 
     func segmentedProgressViewFinished(finishedIndex: Int, isLastIndex: Bool) {
-        
-    }
     
+    }
+
     var numberOfSegments: Int {
         return 5
-    }
-    
+    }   
+
     var segmentDuration: TimeInterval {
         return 5 // seconds
     }
-    
+
     var paddingBetweenSegments: CGFloat {
         return 3 // gap between segments
     }
-    
+
     var trackColor: UIColor {
         return UIColor.red.withAlphaComponent(0.3)
     }
-    
+
     var progressColor: UIColor {
         return UIColor.red
     }
 }
+```
 
+## Properties:
 
-# Properties:
+GET PAUSE STATE
 
-// GET PAUSE STATE
-
+```
 let isPaused = self.segmentBar?.isPaused
-        
-// CURRENT SEGMENT INDEX
+```
 
+CURRENT SEGMENT INDEX
+
+```
 let currentPlayingIndex = self.segmentBar?.currentIndex
+```
 
+## Actions:
 
+START
 
-# Actions:
-
-// START
-
+```
 self.segmentBar?.start()
-        
-// PAUSE
+```
 
+PAUSE
+
+```
 self.segmentBar?.pause()
-        
-// RESUME
+```
 
+RESUME
+
+```
 self.segmentBar?.resume()
-        
-// PLAY NEXT
+```
 
+PLAY NEXT
+
+```
 self.segmentBar?.nextSegment()
-        
-// PLAY PREVIOUS
+```
 
+PLAY PREVIOUS
+
+```
 self.segmentBar?.previousSegment()
-        
-// RESTART
+```
 
+RESTART
+
+```
 self.segmentBar?.restart()
-        
-// RESTART CURRENT
+```
 
+RESTART CURRENT
+
+```
 self.segmentBar?.restartCurrentSegment()
-        
-// RESET
+```
 
+RESET
+
+```
 self.segmentBar?.reset()
+```
