@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		91B394EE247E500A0005A55B /* SGSegmentedProgressViewLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B394EC247E500A0005A55B /* SGSegmentedProgressViewLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91B394F6247E503C0005A55B /* SGSegmentedProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B394F4247E50340005A55B /* SGSegmentedProgressView.framework */; };
-		91B394F7247E503C0005A55B /* SGSegmentedProgressView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91B394F4247E50340005A55B /* SGSegmentedProgressView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91BFF0D02480E3C200F8825F /* SGSegmentedProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BFF0CE2480E3B400F8825F /* SGSegmentedProgressView.framework */; };
+		91BFF0D12480E3C200F8825F /* SGSegmentedProgressView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91BFF0CE2480E3B400F8825F /* SGSegmentedProgressView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +19,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				91B394F7247E503C0005A55B /* SGSegmentedProgressView.framework in Embed Frameworks */,
+				91BFF0D12480E3C200F8825F /* SGSegmentedProgressView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -30,7 +30,7 @@
 		91B394E9247E500A0005A55B /* SGSegmentedProgressViewLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGSegmentedProgressViewLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B394EC247E500A0005A55B /* SGSegmentedProgressViewLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGSegmentedProgressViewLibrary.h; sourceTree = "<group>"; };
 		91B394ED247E500A0005A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B394F4247E50340005A55B /* SGSegmentedProgressView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGSegmentedProgressView.framework; sourceTree = "<group>"; };
+		91BFF0CE2480E3B400F8825F /* SGSegmentedProgressView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGSegmentedProgressView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B394F6247E503C0005A55B /* SGSegmentedProgressView.framework in Frameworks */,
+				91BFF0D02480E3C200F8825F /* SGSegmentedProgressView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +64,8 @@
 		91B394EB247E500A0005A55B /* SGSegmentedProgressViewLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				91B394F4247E50340005A55B /* SGSegmentedProgressView.framework */,
 				91B394EC247E500A0005A55B /* SGSegmentedProgressViewLibrary.h */,
+				91BFF0CE2480E3B400F8825F /* SGSegmentedProgressView.framework */,
 				91B394ED247E500A0005A55B /* Info.plist */,
 			);
 			path = SGSegmentedProgressViewLibrary;
@@ -297,7 +297,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = SG.SGSegmentedProgressViewLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -327,7 +327,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = SG.SGSegmentedProgressViewLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
