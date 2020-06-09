@@ -50,6 +50,10 @@ extension ViewController: SGSegmentedProgressViewDelegate, SGSegmentedProgressVi
     var progressColor: UIColor {
         return UIColor.red
     }
+    
+    var roundCornerType: SGCornerType {
+        return .roundCornerBar(cornerRadious: 5)
+    }
 }
 ```
 
