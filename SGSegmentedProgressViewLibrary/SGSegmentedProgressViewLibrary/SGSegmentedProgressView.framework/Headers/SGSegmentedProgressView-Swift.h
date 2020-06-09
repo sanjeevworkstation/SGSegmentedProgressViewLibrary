@@ -210,6 +210,8 @@ SWIFT_CLASS("_TtC23SGSegmentedProgressView23SGSegmentedProgressView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -425,6 +427,8 @@ SWIFT_CLASS("_TtC23SGSegmentedProgressView23SGSegmentedProgressView")
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
