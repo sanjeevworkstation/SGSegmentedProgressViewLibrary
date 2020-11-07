@@ -2,8 +2,7 @@
 //  SGSegmentedProgressViewLibrary.h
 //  SGSegmentedProgressViewLibrary
 //
-//  Created by Sanjeev Gautam on 27/05/20.
-//  Copyright © 2020 SG. All rights reserved.
+//  Created by Sanjeev Gautam on 07/11/20.
 //
 
 #import <Foundation/Foundation.h>
